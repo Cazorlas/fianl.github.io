@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Thi Final</title>
+    <style>
+      ol {
+        font-size: 1.5rem;
+        margin: 0 auto;
+      }
+      li {
+        border-bottom: solid 1px #ffffff2c;
+        border-top: solid 1px #ffffff2c;
+        padding: 0.5rem 0.25rem;
+      }
+      li::nth(even-child) {
+        background-color: aquamarine;
+      }
+      /* float */
+      .box-float {
+        background-color: yellowgreen;
+      }
+
+      .box-1,
+      .box-2 {
+        display: inline-block;
+        float: left;
+      }
+      .box-3 {
+        float: left;
+        display: inline-block;
+      }
+      .clearfix::after {
+        clear: left;
+        content: "";
+        display: inline-block;
+      }
+      .box {
+        padding: 1rem 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ol>
+        <li>icon 1</li>
+        <li>icon 2</li>
+        <li>icon 3</li>
+      </ol>
+      <div>
+        <a href="https://www.google.com/" target="_blank"
+          ><img src="image/Hung.JPG" alt="hinh anh"
+        /></a>
+      </div>
+      <p style="color: aqua">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+        ullam.
+      </p>
+    </div>
+
+    <div class="box-float">
+      <div class="box box-1"><span>Text 1</span></div>
+      <div class="box box-2 clearfix"><span>Text 2</span></div>
+      <div class="box box-3"><span>Text 3</span></div>
+      <div class="clear"></div>
+    </div>
+  </body>
+</html>
